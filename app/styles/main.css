@@ -68,7 +68,7 @@ body {
         max-width: 730px;
     }
     /* Remove the padding we set earlier */
-
+    
     .header,
     .marketing,
     .footer {
@@ -76,62 +76,108 @@ body {
         padding-right: 0;
     }
     /* Space out the masthead */
-
+    
     .header {
         margin-bottom: 30px;
     }
     /* Remove the bottom border on the jumbotron for visual effect */
-
+    
     .jumbotron {
         border-bottom: 0;
     }
 }
 
 .home_container {
-    background-image: url('../images/shop.jpg');
+    background-image: url('../images/05.jpg');
     height: 100%;
     position: absolute;
     width: 100%;
+    background-position-x: 51%;
+    background-position-y: 41%;
+    background-size: 420%;
+}
+
+body {
+    height: 100%;
+}
+
+.payment_container {
+    background-image: url('../images/blu_gra.jpeg');
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
     background-position-x: 41%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+md-content {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.fa-qrcode,
+.fa-credit-card,
+.fa-history {
+    font-size: 1.8em !important;
 }
 
 .home_container md-content {
-    background-color: rgba(255, 255, 255, 0) !important;
-}
-.fa-qrcode, .fa-credit-card, .fa-history{
-    font-size: 1.8em !important;
-}
-.home_container md-content{
     margin-left: 10px;
-  margin-top: 30px;
+    margin-top: 30px;
 }
-.bank_head{
-  color: rgb(22, 112, 200);
-}
-.fa-cc-visa{
 
+.bank_head {
+    color: rgb(22, 112, 200);
 }
-.card_num{
+
+.fa-cc-visa {}
+
+.card_num {
     color: rgb(116, 181, 244);
 }
-.atm_card{
+
+.atm_card {
     border: 1px solid rgb(42, 131, 218);
 }
-.bank_head{
-  float: left;
-}
-.delete_icon{
-  float: right;
-  display: none;
-  cursor: pointer;
-}
-.card_num{
-  clear: both;
-}
-.atm_card:hover .delete_icon{
-  display: block;
+
+.bank_head {
+    float: left;
 }
 
-.add_new_card_container .md-button{
-  text-align: left;
+.delete_icon {
+    float: right;
+    cursor: pointer;
+}
+
+.card_num {
+    clear: both;
+}
+/*.atm_card:hover .delete_icon{
+  display: block;
+}*/
+/*.atm_card:hover{
+  background-color:
+}*/
+
+.add_new_card_container .md-button {
+    text-align: left;
+}
+
+.table .head {
+    background-color: rgb(203, 203, 203);
+}
+
+.table {
+    border: 0px;
+    border-spacing: 0px;
+}
+
+.table.total {
+    border-top: 1px black;
+}
+
+.order_id {
+    font-size: 16px;
+    color: grey;
 }

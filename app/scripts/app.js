@@ -17,7 +17,11 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMaterial'
-  ])
+  ]).
+  factory('userId', function(){
+    var userId = '1';
+    return userId;
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/main', {
@@ -39,6 +43,10 @@ angular
       .when('/addNewCard', {
         templateUrl: 'views/addnewcard.html',
         controller: 'AddnewcardCtrl'
+      })
+      .when('/checkHistory', {
+        templateUrl: 'views/checkhistory.html',
+        controller: 'CheckhistoryCtrl'
       })
       .otherwise({
         redirectTo: '/homepage'
