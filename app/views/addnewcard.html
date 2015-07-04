@@ -1,0 +1,55 @@
+<div class="add_new_card_container">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+      <span>Add new card</span>
+    </h2>
+    </md-toolbar>
+    <md-content layout-padding>
+        <form name="userForm">
+            <div layout layout-sm="column">
+                <md-input-container flex>
+                    <md-menu>
+                        <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu()" style="width: 100%">
+                            &nbsp;Select Type
+                        </md-button>
+                        <md-menu-content width="4">
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.redial($event)">
+                                    Debit
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.checkVoicemail()">
+                                    Credit Card
+                                </md-button>
+                            </md-menu-item>
+                            <md-menu-divider></md-menu-divider>
+                            <md-menu-item>
+                                <md-button ng-click="ctrl.toggleNotifications()">
+                                    PayTM Wallet
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                    <md-input-container flex>
+                        <label>Card number</label>
+                        <input ng-model="theMax" required>
+                    </md-input-container>
+                    <md-input-container flex>
+                        <label>Expiry Date</label>
+                        <input type="date" ng-model="theMax" required>
+                    </md-input-container>
+                    <md-input-container flex>
+                        <label>CVV number</label>
+                        <input type="number" ng-model="theMax" required>
+                    </md-input-container>
+                    <section layout="row" layout-sm="column" layout-align="center center">
+                        <a href="#/addNewCard">
+                            <md-button class="md-raised md-warn"> Submit</md-button>
+                        </a>
+                    </section>
+                </md-input-container>
+            </div>
+        </form>
+    </md-content>
+</div>

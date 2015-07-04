@@ -36,6 +36,10 @@ angular
         templateUrl: 'views/payments.html',
         controller: 'PaymentsCtrl'
       })
+      .when('/addNewCard', {
+        templateUrl: 'views/addnewcard.html',
+        controller: 'AddnewcardCtrl'
+      })
       .otherwise({
         redirectTo: '/homepage'
       });

@@ -1,1 +1,40 @@
-<p>This is the payments view.</p>
+<div class="payment_container">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+      <span>Payments</span>
+    </h2>
+    </md-toolbar>
+    <md-content class="md-padding">
+        <h2 style="  color: rgb(63, 81, 181);">Your Saved Cards</h2>
+        <md-card class="atm_card">
+            <md-card-content>
+                <div class="bank_head">Axis Bank <i class="fa fa-cc-visa"></i></div>
+                <div class="delete_icon">
+                    <i class="fa fa-trash-o"></i>
+                </div>
+                <div class="card_num">4748 XXXX XXXX 2258</div>
+            </md-card-content>
+        </md-card>
+        <md-card class="atm_card">
+            <md-card-content>
+                <div class="bank_head">HDFC Bank <i class="fa fa-cc-visa"></i></div>
+                <div class="delete_icon">
+                    <i class="fa fa-trash-o"></i>
+                </div>
+                <div class="card_num">7859 XXXX XXXX 0156</div>
+            </md-card-content>
+        </md-card>
+        <md-card class="atm_card">
+            <md-card-content>
+                <div class="bank_head">SBI Bank <i class="fa fa-cc-visa"></i></div>
+                <div class="delete_icon">
+                    <i class="fa fa-trash-o"></i>
+                </div>
+                <div class="card_num">7927 XXXX XXXX 0167</div>
+            </md-card-content>
+        </md-card>
+        <section layout="row" layout-sm="column" layout-align="center center">
+           <a href="#/addNewCard"> <md-button class="md-raised md-warn"><i class="fa fa-plus"></i> Add new card</md-button></a>
+        </section>
+    </md-content>
+</div>

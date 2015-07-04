@@ -105,3 +105,33 @@ body {
     margin-left: 10px;
   margin-top: 30px;
 }
+.bank_head{
+  color: rgb(22, 112, 200);
+}
+.fa-cc-visa{
+
+}
+.card_num{
+    color: rgb(116, 181, 244);
+}
+.atm_card{
+    border: 1px solid rgb(42, 131, 218);
+}
+.bank_head{
+  float: left;
+}
+.delete_icon{
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+.card_num{
+  clear: both;
+}
+.atm_card:hover .delete_icon{
+  display: block;
+}
+
+.add_new_card_container .md-button{
+  text-align: left;
+}
