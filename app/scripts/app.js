@@ -48,6 +48,10 @@ angular
         templateUrl: 'views/checkhistory.html',
         controller: 'CheckhistoryCtrl'
       })
+      .when('/showCurrentBill/:id', {
+        templateUrl: 'views/showcurrentbill.html',
+        controller: 'ShowcurrentbillCtrl'
+      })
       .otherwise({
         redirectTo: '/homepage'
       });

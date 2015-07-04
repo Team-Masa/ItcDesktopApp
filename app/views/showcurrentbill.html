@@ -1,0 +1,31 @@
+<div class="payment_container">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+      <span>Invoice</span>
+    </h2>
+    </md-toolbar>
+    <md-content class="md-padding">
+    </md-content>
+    <md-content class="md-padding">
+        <center>
+            <h2 style="color: rgb(63, 81, 181);">Review Items</h2></center>
+        <md-card>
+            <md-card-content>
+                <table class="table" style="width:100%">
+                    <tr>
+                        <td>Name</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr ng-repeat="item_list in item_lists track by $index" ng-if="item_list !== null">
+                        <td>{{item_list.name}}</td>
+                        <td>{{item_list.price}}</td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td>Total: {{item_lists.sum}}</td>
+                    </tr>
+                </table>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
