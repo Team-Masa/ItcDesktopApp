@@ -1,0 +1,26 @@
+<div class="payment_container">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+      <span>Verification</span>
+    </h2>
+    </md-toolbar>
+    <md-content class="md-padding">
+    </md-content>
+    <md-content class="md-padding">
+        <center>
+            <h2 style="color: rgb(63, 81, 181);">Enter OTP you received</h2>
+        </center>
+        <section layout="row"  layout-align="center center">
+            <md-input-container>
+                <label>OTP</label>
+                <input required name="clientName" ng-model="project.clientName">
+                <div ng-messages="projectForm.clientName.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <a href="#/paySuccess">
+                <md-button class="md-raised md-primary"> Submit </md-button>
+            </a>
+        </section>
+    </md-content>
+</div>

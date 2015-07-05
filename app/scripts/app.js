@@ -52,6 +52,22 @@ angular
         templateUrl: 'views/showcurrentbill.html',
         controller: 'ShowcurrentbillCtrl'
       })
+      .when('/selectPayMethod', {
+        templateUrl: 'views/selectpaymethod.html',
+        controller: 'SelectpaymethodCtrl'
+      })
+      .when('/enterOtp', {
+        templateUrl: 'views/enterotp.html',
+        controller: 'EnterotpCtrl'
+      })
+      .when('/paySuccess', {
+        templateUrl: 'views/paysuccess.html',
+        controller: 'PaysuccessCtrl'
+      })
+      .when('/thankyou', {
+        templateUrl: 'views/thankyou.html',
+        controller: 'ThankyouCtrl'
+      })
       .otherwise({
         redirectTo: '/homepage'
       });
