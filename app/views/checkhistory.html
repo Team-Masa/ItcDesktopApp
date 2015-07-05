@@ -11,6 +11,8 @@
         <md-card ng-repeat="bill in bills track by $index" ng-if="bill !== null">
             <md-card-content>
                 <div class="md-title order_id">Id: {{bill.id}}</div>
+                <div class="date">Date: {{getDate(bill.createdAt)}}</div>
+                <div class="time">Time: {{getTime(bill.createdAt)}}</div>
                 <table class="table" style="width:100%">
                     <tr class="head">
                         <td style="width:50%">Name</td>

@@ -17,28 +17,22 @@ angular.module('itechHackApp')
         $scope.goBack = function(){
             $location.path("/homepage");
         }
+        $scope.getDate = function(d)
+        {
+            var dateObj = (new Date(d).getDate()).toString() +"/"+ (new Date(d).getMonth()).toString() +"/"+ (new Date(d).getFullYear()).toString();
+            return dateObj;
+        };
+        $scope.getTime = function(d)
+        {
+            var timeObj = (new Date(d).getHours()).toString() +":"+ (new Date(d).getMinutes()).toString() +":"+ (new Date(d).getSeconds()).toString();
+            return timeObj;
+        };
         console.log(userId);
         var bills = new Array();
         $http({
             method: 'GET',
             url: 'http://172.16.1.72:1337/user?userId=' + userId
         }).success(function(data) {
-            // data[0].bills.forEach(function(items) {
-            //     var sum = 0;
-            //     if (items) {
-            //         items.items.forEach(function(ob) {
-            //             if (ob) {
-            //                 sum += ob["price"];
-            //             }
-            //         })
-
-            //     };
-            //     data[0].bills.push({
-            //         "sum": sum
-            //     });
-            //     // console.log(items);
-
-            // })
             $scope.bills = data[0].bills;
             console.log(data[0].bills);
 

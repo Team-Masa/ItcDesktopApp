@@ -181,3 +181,9 @@ md-content {
     font-size: 16px;
     color: grey;
 }
+.date{
+float: left;
+}
+.time{
+    float: right
+}
