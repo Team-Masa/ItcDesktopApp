@@ -88,13 +88,13 @@ body {
 }
 
 .home_container {
-    background-image: url('../images/shop.jpg');
+    background-image: url('../images/shopping.jpg');
     height: 100%;
     position: absolute;
     width: 100%;
     background-position-x: 51%;
     background-position-y: 41%;
-    background-size: 420%;
+    background-size: 100%;
 }
 
 body {
@@ -123,7 +123,7 @@ md-content {
 }
 
 .home_container md-content {
-    margin-left: 10px;
+    margin-left: 50px;
     margin-top: 30px;
 }
 
