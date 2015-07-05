@@ -1,6 +1,9 @@
 <div class="payment_container">
     <md-toolbar class="md-theme-light">
         <h2 class="md-toolbar-tools">
+                         <md-button class="md-icon-button md-mini" aria-label="Eat cake" ng-click="goBack()">
+            <md-icon md-svg-src="" class="fa fa-arrow-left"></md-icon>
+        </md-button>
       <span>Verification</span>
     </h2>
     </md-toolbar>
@@ -10,7 +13,7 @@
         <center>
             <h2 style="color: rgb(63, 81, 181);">Enter OTP you received</h2>
         </center>
-        <section layout="row"  layout-align="center center">
+        <section layout="row" layout-align="center center">
             <md-input-container>
                 <label>OTP</label>
                 <input required name="clientName" ng-model="project.clientName">

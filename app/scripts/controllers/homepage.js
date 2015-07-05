@@ -8,10 +8,13 @@
  * Controller of the itechHackApp
  */
 angular.module('itechHackApp')
-  .controller('HomepageCtrl', function ($scope) {
+  .controller('HomepageCtrl', function ($scope, $mdSidenav, $mdDialog) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+    $scope.toggleSidenav = function(menuId) {
+    $mdSidenav(menuId).toggle();
+  }
   });

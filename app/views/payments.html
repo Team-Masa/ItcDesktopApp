@@ -1,15 +1,19 @@
 <div class="payment_container">
     <md-toolbar class="md-theme-light">
         <h2 class="md-toolbar-tools">
+         <md-button class="md-icon-button md-mini" aria-label="Eat cake" ng-click="goBack()">
+            <md-icon md-svg-src="" class="fa fa-arrow-left"></md-icon>
+        </md-button>
       <span>Payments</span>
     </h2>
     </md-toolbar>
     <md-content class="md-padding">
-       <center> <h2 style="  color: rgb(63, 81, 181);">Your Saved Cards</h2></center>
+        <center>
+            <h2 style="  color: rgb(63, 81, 181);">Your Saved Cards</h2></center>
         <md-card class="atm_card">
             <md-card-content>
                 <div class="bank_head">Axis Bank <i class="fa fa-cc-visa"></i></div>
-                <div class="delete_icon" ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-class="{display: block}" >
+                <div class="delete_icon" ng-mouseenter="hover = true" ng-mouseleave="hover = false" ng-class="{display: block}">
                     <i class="fa fa-trash-o"></i>
                 </div>
                 <div class="card_num">4748 XXXX XXXX 2258</div>
@@ -34,7 +38,9 @@
             </md-card-content>
         </md-card>
         <section layout="row" layout-sm="column" layout-align="center center">
-           <a href="#/addNewCard"> <md-button class="md-raised md-warn"><i class="fa fa-plus"></i> Add new card</md-button></a>
+            <a href="#/addNewCard">
+                <md-button class="md-raised md-warn"><i class="fa fa-plus"></i> Add new card</md-button>
+            </a>
         </section>
     </md-content>
 </div>

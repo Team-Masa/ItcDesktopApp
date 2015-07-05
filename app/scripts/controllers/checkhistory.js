@@ -8,12 +8,15 @@
  * Controller of the itechHackApp
  */
 angular.module('itechHackApp')
-    .controller('CheckhistoryCtrl', function($scope, userId, $http) {
+    .controller('CheckhistoryCtrl', function($scope, userId, $http, $location) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
             'Karma'
         ];
+        $scope.goBack = function(){
+            $location.path("/homepage");
+        }
         console.log(userId);
         var bills = new Array();
         $http({

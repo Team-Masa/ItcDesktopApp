@@ -1,11 +1,14 @@
 <div class="payment_container">
     <md-toolbar class="md-theme-light">
         <h2 class="md-toolbar-tools">
-      <span>History</span>
+        <md-button class="md-icon-button md-mini" aria-label="Eat cake" ng-click="goBack()">
+            <md-icon md-svg-src="" class="fa fa-arrow-left"></md-icon>
+        </md-button>
+      <span>&nbsp;History</span>
     </h2>
     </md-toolbar>
     <md-content class="md-padding">
-        <md-card ng-repeat= "bill in bills track by $index" ng-if="bill !== null">
+        <md-card ng-repeat="bill in bills track by $index" ng-if="bill !== null">
             <md-card-content>
                 <div class="md-title order_id">Id: {{bill.id}}</div>
                 <table class="table" style="width:100%">
@@ -13,16 +16,14 @@
                         <td style="width:50%">Name</td>
                         <td style="width:50%">Price</td>
                     </tr>
-                    <tr ng-repeat= "item in bill.items track by $index" ng-if="item !== null">
+                    <tr ng-repeat="item in bill.items track by $index" ng-if="item !== null">
                         <td style="width:50%">{{item.name}}</td>
                         <td style="width:50%">{{item.price}}</td>
                     </tr>
-
                     <tr>
-                      <td></td>
-                      <!-- <td>Total: Rs {{bill.sum}}</td> -->
+                        <td></td>
+                        <!-- <td>Total: Rs {{bill.sum}}</td> -->
                     </tr>
-
                 </table>
             </md-card-content>
         </md-card>

@@ -8,12 +8,15 @@
  * Controller of the itechHackApp
  */
 angular.module('itechHackApp')
-    .controller('ShowcurrentbillCtrl', function($scope, $routeParams, $http) {
+    .controller('ShowcurrentbillCtrl', function($scope, $routeParams, $http, $location) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
             'Karma'
         ];
+        $scope.goBack = function() {
+            $location.path("/homepage");
+        }
         var billId = $routeParams.id;
         $scope.item_lists = "";
         $http({
@@ -28,9 +31,9 @@ angular.module('itechHackApp')
                             // console.log(item_list);
                             $scope.item_lists = item_list.items;
                             var sum = 0;
-                            item_list.items.forEach(function(item){
-                              if (item)
-                              sum += item.price;
+                            item_list.items.forEach(function(item) {
+                                if (item)
+                                    sum += item.price;
                             })
                             $scope.item_lists.sum = sum;
                         }
@@ -41,7 +44,7 @@ angular.module('itechHackApp')
                 // })
 
             })
-                            console.log($scope.item_lists);
+            console.log($scope.item_lists);
 
         })
     });
